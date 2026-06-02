@@ -1,8 +1,8 @@
 extends CharacterBody2D
 
-@export var left_action := "p1_left"
-@export var right_action := "p1_right"
-@export var jump_action := "p1_jump"
+@export var left_action := "p2_left"
+@export var right_action := "p2_right"
+@export var jump_action := "p2_jump"
 
 const SPEED = 300.0
 const JUMP_VELOCITY = -400.0
