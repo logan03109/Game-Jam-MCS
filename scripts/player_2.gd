@@ -20,6 +20,7 @@ func _physics_process(delta):
 		jump_count -= 1 
 		velocity.y = JUMP_VELOCITY
 
+
 	var direction := Input.get_axis(left_action, right_action)
 
 	if direction:
