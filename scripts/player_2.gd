@@ -13,12 +13,20 @@ func _physics_process(delta):
 	if not is_on_floor():
 		velocity += get_gravity() * delta
 
+<<<<<<< HEAD
 	if is_on_floor():
 		jump_count = 2
 	
 	if Input.is_action_just_pressed(jump_action) and jump_count > 0:
 		jump_count -= 1 
 		velocity.y = JUMP_VELOCITY
+=======
+	if Input.is_action_just_pressed(jump_action) and jump_count != 1:
+		velocity.y = JUMP_VELOCITY
+		jump_count -= 1 
+	if is_on_floor():
+		jump_count = 2
+>>>>>>> main
 
 	var direction := Input.get_axis(left_action, right_action)
 
